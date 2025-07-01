@@ -23,6 +23,7 @@ jobs:
 
  server-control:
     runs-on: ubuntu-latest
+    needs: node-server-build
     strategy:
       fail-fast: false
       matrix:
